@@ -1,0 +1,19 @@
+{
+    "name": "get-repo/music-downloader-bundle",
+    "description": "Music Downloader Bundle",
+    "homepage": "https://github.com/get-repo/music-downloader-bundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/dom-crawler": "^3.3",
+        "symfony/process": "^3.3",
+        "cocur/slugify": "^3.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "GetRepo\\MusicDownloaderBundle\\": ""
+        }
+    }
+}

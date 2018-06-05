@@ -1,0 +1,9 @@
+services:
+    youtube_dl:
+        class: GetRepo\MusicDownloaderBundle\Fetcher\YoutubeDLFetcher
+        arguments: ['@service_container']
+        public: true
+    mp3_cc:
+        class: GetRepo\MusicDownloaderBundle\Fetcher\Mp3CCFetcher
+        arguments: ['@service_container']
+        public: true
