@@ -7,3 +7,7 @@ services:
         class: GetRepo\MusicDownloaderBundle\Fetcher\Mp3CCFetcher
         arguments: ['@service_container']
         public: true
+    dat_music:
+        class: GetRepo\MusicDownloaderBundle\Fetcher\DatMusicFetcher
+        arguments: ['@service_container']
+        public: true

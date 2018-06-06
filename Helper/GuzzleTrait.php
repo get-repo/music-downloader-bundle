@@ -12,10 +12,10 @@ trait GuzzleTrait
      * @param string $method
      * @return string|false
      */
-    protected function request($url, $method = 'GET') {
+    protected function request($url, $method = 'GET', array $options = []) {
         try {
             $client = new Client();
-            $response = $client->request($method, $url);
+            $response = $client->request($method, $url, $options);
 
             if (200 === $response->getStatusCode()) {
                 return (string) $response->getBody();
